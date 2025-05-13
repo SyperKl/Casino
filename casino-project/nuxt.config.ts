@@ -1,5 +1,14 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  modules: [
+    '@nuxt/image',
+    '@nuxt/ui',
+    '@nuxt/content',
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    '@nuxt/icons',
+    '@nuxt/scripts',
+    '@nuxt/test-utils'
+  ],
+  // Другие настройки проекта
   devtools: { enabled: true }
 })
