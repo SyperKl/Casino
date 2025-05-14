@@ -1,14 +1,12 @@
 export default defineNuxtConfig({
+  // Исправляем конфигурацию совместимости
+  nitro: {
+    compatibilityDate: '2025-05-14'
+  },
+  // Упрощаем список модулей
   modules: [
-    '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxt/content',
-    '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/icons',
-    '@nuxt/scripts',
-    '@nuxt/test-utils'
+   '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
   ],
-  // Другие настройки проекта
   devtools: { enabled: true }
 })
